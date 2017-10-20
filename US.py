@@ -8,7 +8,7 @@ class US:
         this.readings = [128, 128, 128, 128, 128]
 
     def get_distance():
-        distance = read_ultrasonic_sensor(trig, echo)
+        distance = read_ultrasonic_sensor(self, trig, echo)
         if (distance != null):
             readings.append(distance)
             readings.pop(0)
