@@ -48,6 +48,10 @@ def swingturn_left():
     MotorRight.run(MoHat.FORWARD)
     time.sleep(1)
 
+def stop_movement():
+    MotorLeft.run(MoHat.RELEASE)
+    MotorRight.run(MoHat.RELEASE)
+
 try:
     move_forward()
     time.sleep(1)
