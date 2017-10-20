@@ -7,7 +7,7 @@ class US:
         self.echo = echo
         self.readings = [128, 128, 128, 128, 128]
 
-    def get_distance():
+    def get_distance(self):
         distance = read_ultrasonic_sensor(trig, echo)
         if (distance != null):
             readings.append(distance)
